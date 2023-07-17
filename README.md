@@ -1,4 +1,3 @@
-# Uploaded at: https://super-sopapillas-8a99da.netlify.app/
 
 # Getting Started with Create React App
 

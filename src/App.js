@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Nav>
+        <Nav className="nav">
           <GiKnifeFork></GiKnifeFork>
-          <Logo to={"/"}>Delicious</Logo>
+          <Logo to={"/"}>Yummy</Logo>
         </Nav>
 
         <Search></Search>
@@ -23,17 +23,25 @@ function App() {
   );
 }
 
+/*
+const Nav = styled(Nav)`
+  display: flex;
+`;
+*/
+
 const Logo = styled(Link)`
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  margin-left: 1.2rem;
   font-weight: 400;
-  font-family: "Lobster Two", cursive;
+  /* text-transform: lowercase; */
+  letter-spacing: 2px;
 `;
 
 const Nav = styled.div`
-  padding: 4rem 0rem;
+  padding: 2.5rem 0rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   svg {
     font-size: 2rem;
